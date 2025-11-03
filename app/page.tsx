@@ -1,4 +1,3 @@
-import Image from "next/image";
 import posts from "../data/post";
 import PostCard from "../components/PosterCard";
 export default function Home() {

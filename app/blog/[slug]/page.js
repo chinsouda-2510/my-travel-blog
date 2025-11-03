@@ -1,10 +1,8 @@
 "use client"
 import { useState } from "react";
 import { useRouter } from "next/router";
-import posts from "../../../data/post";
-import { notFound } from "next/navigation";
 
-export default function PostPage({ params }) {
+export default function PostPage() {
   const router = useRouter();
   const[form, setForm]=useState({
     title:"",

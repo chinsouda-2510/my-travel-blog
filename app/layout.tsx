@@ -1,7 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ReactNode } from "react";
 export const metadata = {
   title: "Travel Blog",
   description: "A simple travel blog built with Next.js and Tailwind CSS"
