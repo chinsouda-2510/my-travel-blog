@@ -2,14 +2,13 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import clsx from "clsx";
-
 export default function Navbar() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
     if (saved === "dark") {
-      setDark(true);
+      // setDark(true);
       document.documentElement.classList.add("dark");
     }
   }, []);

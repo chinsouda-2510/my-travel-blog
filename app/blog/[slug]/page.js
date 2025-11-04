@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 export default function PostPage() {
-  const router = useRouter();
+  // const router = useRouter();
   const[form, setForm]=useState({
     title:"",
     excerpt:"",
@@ -26,12 +26,12 @@ export default function PostPage() {
       likes: 0,
     };
 
-    // ดึงโพสต์เดิมจาก localStorage
+    // localStorage
     const existing = JSON.parse(localStorage.getItem("posts") || "[]");
     existing.push(newPost);
     localStorage.setItem("posts", JSON.stringify(existing));
 
-    alert("✅ เพิ่มโพสต์ใหม่สำเร็จ!");
+    alert("✅ Successfully added new post!");
     router.push("/");
   };
 

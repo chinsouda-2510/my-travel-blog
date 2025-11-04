@@ -4,7 +4,7 @@ export default function Home() {
   return (
    <>
       <header className="mb-8">
-        <h1 className="text-4xl font-bold mb-2">🌍 My Travel Blog</h1>
+        <h1 className="text-4xl font-bold mb-2">🌍My Travel Blog</h1>
         <p className="text-gray-600 dark:text-gray-300">A short description of my blog, tourist attractions and travel tips</p>
       </header>
 
